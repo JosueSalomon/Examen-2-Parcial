@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import examen.lenguajes.josue.modelos.Clientes;
 import examen.lenguajes.josue.modelos.Vehiculos;
+import examen.lenguajes.josue.repositorios.VehiculosRepository;
 import examen.lenguajes.josue.repositorios.clienterepository;
 import examen.lenguajes.josue.servicios.ClienteService;
 
@@ -19,8 +20,7 @@ public class ClienteServiceImpl implements ClienteService{
 
     @Override
     public Clientes guardarCliente(Clientes cliente) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'guardarCliente'");
+    return clienterepository.save(cliente);
     }
 
     @Override

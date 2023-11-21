@@ -23,7 +23,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 
-public abstract class Clientes {
+public class Clientes {
     
     @Id
     @Column(name = "codigocliente")
